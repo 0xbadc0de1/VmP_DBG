@@ -1,0 +1,19 @@
+First Public Release of VMP decompiler:
+
+In order to decompile a function (and also debugg) you need to have 4 (sometimes three) importante RVA values (In future versions this may be fixed and eventually you just need to enter the machine halting point):
+
+-> Machine entry point, In essence the va where the machine reads the next instruction
+-> Handler fetch #1 (The point where the machine usually jumps to the correct handler)
+-> Handler fetch #2 (same as above but there are versions where two handlers appear and the use of one or another has no particular reason)
+-> Halting point: When Reached this point the machine will halt and return to user code.
+
+As a matter of interest consider the Function #2 of the included crackme. The values are:
+
+Machine entry point: 0x6009
+Handler fetch #1: 0x485e
+Handler fetch #2: 0x5583
+Halting point: 0x1274
+
+The use of the debugger is easy and for now forget about the F10 (it is supposed to work when garbage code removal tool is implemented, and it debuggs the cleaned code).
+
+You can save the project and load via Save/Restore Session.

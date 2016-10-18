@@ -1,0 +1,5 @@
+#ifndef VM_INSTRUCTION_SET_H
+#define VM_INSTRUCTION_SET_H
+
+#endif // VM_INSTRUCTION_SET_H
+

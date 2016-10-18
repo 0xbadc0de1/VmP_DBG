@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Icons">
+        <file>icons/Virus-50.png</file>
+        <file>icons/Virus-50.ico</file>
+    </qresource>
+</RCC>
